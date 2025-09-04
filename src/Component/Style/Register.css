@@ -1,0 +1,15 @@
+/* Disable card zoom */
+.mdb-card,
+.mdb-card:hover {
+  transform: none !important;
+}
+
+/* Disable MDBCardImage zoom */
+.mdb-card img,
+.mdb-card img:hover {
+  transform: none !important;
+  transition: none !important;
+}
+/* .hover-zoom:hover {
+  transform: scale(0.05);
+} */

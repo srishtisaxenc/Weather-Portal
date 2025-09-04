@@ -1,0 +1,47 @@
+/* /* ========== Your Existing Rain Animation ========== */
+.rain-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 2px;
+  height: 10px;
+  background: rgba(102, 204, 255, 0.6);
+  animation: drop 0.6s linear infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+
+
+/* Highlight current hour card */
+.card.highlight {
+  background-color: #efe2af;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 200, 0, 0.5);
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
